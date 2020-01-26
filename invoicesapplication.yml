@@ -1,0 +1,19 @@
+server:
+    port: 7087
+spring:
+    datasource:
+        password: ''
+        url: jdbc:mysql://localhost:3306/employee?useTimezone=true&serverTimezone=GMT
+        username: root
+    h2:
+        console:
+            enabled: true
+            path: /h2-console
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+    profiles:
+        active: mysql
